@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .container {
+      max-width: 500px;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+    button {
+      margin-top: 30px;
+      padding: 12px 20px;
+      border: none;
+      background: white;
+      color: #ff4e7a;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ffe4ec;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hey...</h1>
+    <p id="message">I made this just for you.</p>
+    <button onclick="showMessage()">Click me</button>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").innerHTML =
+        "I know things didn't go the way we wanted... but I just want you to know that I miss you. ??";
+    }
+  </script>
+</body>
+</html>
